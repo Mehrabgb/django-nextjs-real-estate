@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+    --background: #F6F7F9;
+    --surface: #FFFFFF;
+    --surface-muted: #EEF1F4;
+
+    --primary: #315A72;
+    --primary-hover: #26495D;
+
+    --secondary: #6B7C86;
+    --accent: #C49A6C;
+
+    --text: #1F2933;
+    --text-muted: #66727D;
+    --text-on-primary: #FFFFFF;
+
+    --border: #D8DEE3;
+    --border-light: #E7EBEE;
+
+    --success: #527A61;
+    --danger: #B85C5C;
+
+    --input-background: #FFFFFF;
+    --input-border: #CBD3D9;
+
+    --card-background: #FFFFFF;
+    --card-hover: #F8FAFB;
+
+    --overlay: rgba(15, 23, 30, 0.45);
+}
+
+.dark {
+    --background: #11181D;
+    --surface: #182127;
+    --surface-muted: #202C34;
+
+    --primary: #78A6BC;
+    --primary-hover: #91B8CA;
+
+    --secondary: #71838D;
+    --accent: #CBA878;
+
+    --text: #F1F4F6;
+    --text-muted: #AAB6BD;
+    --text-on-primary: #11181D;
+
+    --border: #34434D;
+    --border-light: #2A3740;
+
+    --success: #7FA58B;
+    --danger: #D98282;
+
+    --input-background: #202C34;
+    --input-border: #3B4B55;
+
+    --card-background: #182127;
+    --card-hover: #202C34;
+
+    --overlay: rgba(0, 0, 0, 0.65);
+}
+
+@theme {
+    --color-background: var(--background);
+    --color-surface: var(--surface);
+    --color-surface-muted: var(--surface-muted);
+
+    --color-primary: var(--primary);
+    --color-primary-hover: var(--primary-hover);
+
+    --color-secondary: var(--secondary);
+    --color-accent: var(--accent);
+
+    --color-text: var(--text);
+    --color-text-muted: var(--text-muted);
+    --color-text-on-primary: var(--text-on-primary);
+
+    --color-border: var(--border);
+    --color-border-light: var(--border-light);
+
+    --color-success: var(--success);
+    --color-danger: var(--danger);
+
+    --color-input-background: var(--input-background);
+    --color-input-border: var(--input-border);
+
+    --color-card: var(--card-background);
+    --color-card-hover: var(--card-hover);
+}
+
+html {
+    background: var(--background);
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes image-fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-image-fade {
+    animation: image-fade 500ms ease-in-out;
+}
